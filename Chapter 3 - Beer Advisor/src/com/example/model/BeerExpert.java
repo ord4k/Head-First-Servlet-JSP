@@ -1,4 +1,4 @@
-package com.example.model2;
+package com.example.model;
 import java.util.*;
 
 public class BeerExpert {
