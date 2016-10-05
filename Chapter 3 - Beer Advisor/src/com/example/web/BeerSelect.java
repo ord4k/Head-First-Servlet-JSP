@@ -19,8 +19,12 @@ public class BeerSelect extends HttpServlet {
 	//	response.setContentType("text/html");
 	//	PrintWriter out = response.getWriter();
 	//	out.println("Beer Selection Advice<br>");
+	
+		ServletContext context = getServletContext();
+		String adminEmail = context.getInitParameter("adminEmail");
 		
 		request.setAttribute("styles", result);
+		request.setAttribute("adminEmail", adminEmail);
 		
 		RequestDispatcher view = request.getRequestDispatcher("result.jsp");
 		view.forward(request,response);
