@@ -10,6 +10,11 @@
 	<servlet-class>com.example.web.BeerSelect</servlet-class>
 </servlet>
 
+<context-param>
+		<param-name>adminEmail</param-name>
+		<param-value>michal.ordak@gmail.com</param-value>
+</context-param>
+
 <servlet-mapping>
 	<servlet-name>Ch3 Beer</servlet-name>
 	<url-pattern>/SelectBeer.do</url-pattern>
